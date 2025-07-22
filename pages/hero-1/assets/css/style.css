@@ -1,158 +1,132 @@
-*, *::before, *::after, h6, p {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Dev */
-.contents,
-.contents * {
-    /* outline: 1px dashed yellow; */
-}
-
 body {
-    height: 300vh;
-    width: 100dvh;
-    overflow-x: hidden;
+  margin: 0;
+  background: black;
+  color: #FFFF33;
+  font-family: 'Press Start 2P', cursive;
+  overflow-x: hidden;
 }
 
 .hero-background {
-    width: 100dvw;
-    height: 100dvh;
-    background: url('../img/grassland-wallpaper.jpg');
-    object-fit: cover;
-    position: relative;
+  background: url('../img/pacman-bg.gif') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-    & .mascot {
-        position: absolute;
-        right: 2rem;
-        bottom: 0;
-        height: 15rem;
-    }
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #111;
+  color: #0FF;
+  padding: 8px 10px;
+  text-decoration: none;
+  border: 2px solid #0FF;
+  font-size: 10px;
+}
+
+.btn.active {
+  background: #0FF;
+  color: black;
+}
+
+.mascot {
+  width: 120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .contents {
-    width: 100dvw;
-    height: calc(100dvh - 60px);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    justify-content: space-between;
-
-    & .top {
-        & .logo {
-            height: 50px;
-        }
-    }
-
-    & .middle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        
-        & .note {
-            font-size: 1rem;
-            padding: 2rem;
-            }
-
-            & .card {
-                padding: 2rem;
-                width: 35dvw;
-                background: rgba(255, 255, 255, 0.1);
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                font-size: 1.2rem;
-                border: 1px solid rgba(245, 245, 245, 0.212);
-                color: white;
-                border-radius: 15px;
-
-                & .card-img {
-                    position: absolute;
-                    height: calc(100% - 4rem);
-                    width: fit-content;
-                    right: 2rem;
-                    z-index: -1;
-                }
-
-                & .title {
-                    padding: 1rem 0;
-                    border-bottom: 1px white solid;
-                    width: fit-content;
-                    font-weight: 700;
-                    letter-spacing: 1.2rem;
-                    filter: invert(1);
-                }
-
-                & .description {
-                    padding: 1rem 0;
-                    width: 65%;
-                    font-size: 1rem;
-                    text-align: justify;
-                    text-justify: inter-word;
-                    filter: invert(1);
-                }
-
-                & i {
-                    filter: invert(1);
-                }
-            }
-
-        & .others {
-            display: flex;
-            justify-content: space-between;
-            width: 35dvw;
-            padding: 2rem;
-
-            p {
-                filter: invert(1);
-                padding: 0;
-                margin: 0;
-            }
-        }
-    }
-
-    & .bottom {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 3rem;
-        filter: invert(1);
-
-        & .creators {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            & h6 {
-                padding: 0;
-                margin: 0;
-                font-weight: 650;
-            }
-
-            & p {
-                padding: 0;
-                margin: 0;
-            }
-        }
-    }
+  text-align: center;
+  margin-top: 120px;
+  padding: 0 20px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .contents {
-        & .middle {
-            & .card, & .others {
-                width: 70dvw;
+.logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
 
-            }
-        }
+.note {
+  font-size: 10px;
+  color: #FF69B4;
+  margin-bottom: 10px;
+}
 
-    }
+.card {
+  background: #111;
+  border: 3px dashed #FFFF33;
+  padding: 16px;
+  margin: 20px auto;
+}
 
-    .hero-background {
-        & .mascot {
-            height: 10rem;
-        }
-    }
+.card-img {
+  width: 100%;
+  image-rendering: pixelated;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #FFFF33;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.title span {
+  color: #FF69B4;
+}
+
+.description {
+  font-size: 10px;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.bi-three-dots {
+  font-size: 20px;
+  color: #FF69B4;
+}
+
+.others {
+  font-size: 8px;
+  margin-top: 15px;
+  color: #0FF;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.creators p {
+  margin: 0;
+  color: #999;
+}
+
+.creators h6 {
+  margin: 0;
+  color: #FFFF33;
+}
+
+@media (max-width: 576px) {
+  .mascot {
+    width: 80px;
+    top: 10px;
+    left: 10px;
+  }
 }

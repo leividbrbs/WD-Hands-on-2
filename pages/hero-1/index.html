@@ -1,145 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hero 1 - Pac-Man</title>
 
-    <!-- Retro Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/scrollbar.css">
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous">
 
-    <!-- Bootstrap and Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-        body {
-            margin: 0;
-            background: black;
-            color: #FFFF33;
-            font-family: 'Press Start 2P', cursive;
-            overflow-x: hidden;
-        }
-
-        .hero-background {
-            background: url('./assets/img/pacman-bg.gif') no-repeat center center/cover;
-            min-height: 100vh;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .header {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .btn {
-            background: #111;
-            color: #0FF;
-            padding: 10px;
-            text-decoration: none;
-            border: 2px solid #0FF;
-        }
-
-        .btn.active {
-            background: #0FF;
-            color: black;
-        }
-
-        .mascot {
-            width: 180px;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-        }
-
-        .contents {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            width: 180px;
-            margin: 0 auto;
-        }
-
-        .note {
-            font-size: 12px;
-            color: #FF69B4;
-        }
-
-        .card {
-            background: #111;
-            border: 3px dashed #FFFF33;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .card-img {
-            width: 100%;
-            image-rendering: pixelated;
-        }
-
-        .title {
-            color: #FFFF33;
-            font-size: 18px;
-            margin-top: 15px;
-        }
-
-        .description {
-            color: #0FF;
-            font-size: 10px;
-            margin: 10px 0;
-        }
-
-        .bi-three-dots {
-            font-size: 24px;
-            color: #FF69B4;
-        }
-
-        .others, .bottom {
-            font-size: 10px;
-            color: #FFF;
-        }
-
-        .email {
-            margin-bottom: 10px;
-        }
-
-        .creators h6 {
-            margin: 0;
-            color: #FF69B4;
-        }
-    </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="hero-background">
-        <header class="header">
-            <a href="../../index.html" class="btn">Home</a>
-            <a class="btn active">Arcade Hero</a>
-            <a href="../hero-2/index.html" class="btn">Hero 2</a>
-            <a href="../hero-3/index.html" class="btn">Hero 3</a>
-            <a href="../hero-4/index.html" class="btn">Hero 4</a>
-            <a href="" class="btn">Hero 5</a>
-            <a href="../card-gallery/index.html" class="btn">Gallery</a>
-        </header>
+  <div class="hero-background">
+    <header class="header">
+      <a href="../../index.html" class="btn">Home</a>
+      <a class="btn active">Hero 1</a>
+      <a href="../hero-2/index.html" class="btn">Hero 2</a>
+      <a href="../hero-3/index.html" class="btn">Hero 3</a>
+      <a href="../hero-4/index.html" class="btn">Hero 4</a>
+      <a href="#" class="btn">Hero 5</a>
+      <a href="../card-gallery/index.html" class="btn">Gallery</a>
+    </header>
 
-        <img src="./assets/img/pacman.png" alt="Pac-Man" class="mascot">
+    <img src="./assets/img/pac_thumb_brand_624x468_4b.jpg" alt="Pac-Man" class="mascot">
 
-        <div class="contents">
-            <div class="top">
-                <img src="./assets/img/pixel-logo.png" alt="Pixel Logo" class="logo">
-            </div>
+    <div class="contents">
+      <div class="top">
+        <img src="./assets/img/680691c6564b712c891584f6_PAC25_webhero_1200x600_04.18.2025.jpg" alt="Logo" class="logo">
+      </div>
 
-            <div class="middle">
-                <h4 class="note">insert coin to play</h
+      <div class="middle">
+        <h4 class="note">insert coin to play</h4>
+
+        <div class="card">
+          <img src="./assets/img/snorlax-card.jpg" alt="Card Image" class="card-img">
+          <h1 class="title">LEVEL UP <br>QUEST<span>!</span></h1>
+          <p class="description">Collect all the power pellets while avoiding bugs. Today's mission: squash 3 code ghosts.</p>
+          <i class="bi bi-three-dots"></i>
+        </div>
+
+        <div class="others">
+          <div class="email">
+            <p>GitHub</p>
+            <p>@leividbrbs <a href="https://github.com/leividbrbs/"></a></p>
+          </div>
+          <p>07/21/2025</p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="creators">
+          <p>developed by</p>
+          <h6>leivid
+          </h6>
+        </div>
+        <div class="creators">
+          <p>powered by</p>
+          <h6>leixie</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
