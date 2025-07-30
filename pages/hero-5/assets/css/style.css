@@ -1,0 +1,162 @@
+/* ========== RESET & BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+/* ========== BACKGROUND & WRAPPER ========== */
+.gnx-theme {
+  background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* ========== HEADER NAVIGATION ========== */
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+  background-color: #111;
+}
+
+.btn {
+  background-color: #c1121f;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn.active {
+  background-color: #a50e1e;
+}
+
+/* ========== HERO SECTION ========== */
+.mascot {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== CARD SECTION ========== */
+.card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  color: #e00;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.card i {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card i:hover {
+  transform: scale(1.2);
+  color: #c1121f;
+}
+
+/* ========== FOOTER / META ========== */
+.others {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.email p:last-child {
+  word-break: break-word;
+}
+
+.email a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .btn {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+
+  .card {
+    max-width: 90%;
+    padding: 16px;
+  }
+
+  .mascot,
+  .logo {
+    max-width: 220px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* ========== GENERAL TRANSITIONS ========== */
+a,
+.btn,
+.card,
+.logo,
+.mascot {
+  transition: all 0.3s ease-in-out;
+}
