@@ -7,29 +7,33 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #0a0a0a;
-  color: #fff;
+  background-color: #0b0b13;
+  color: #e0e0f5;
+  line-height: 1.6;
 }
 
-/* ========== BACKGROUND & WRAPPER ========== */
+/* ========== BACKGROUND WRAPPER ========== */
 .gnx-theme {
-  background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a);
+  background: linear-gradient(to bottom right, #0a0a13, #1a1a2e);
   min-height: 100vh;
-  padding-bottom: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ========== HEADER NAVIGATION ========== */
+/* ========== NAVIGATION HEADER ========== */
 .header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
   padding: 20px;
-  background-color: #111;
+  background-color: #111122;
+  box-shadow: 0 2px 8px rgba(187, 134, 252, 0.1);
 }
 
 .btn {
-  background-color: #c1121f;
+  background-color: #6a0dad;
   color: #fff;
   font-size: 0.85rem;
   padding: 10px 14px;
@@ -41,90 +45,101 @@ body {
 
 .btn:hover,
 .btn.active {
-  background-color: #a50e1e;
+  background-color: #bb86fc;
+  color: #0a0a13;
 }
 
-/* ========== HERO SECTION ========== */
+/* ========== HERO IMAGE ========== */
 .mascot {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
   display: block;
-  margin: 0 auto 2rem;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
   border-radius: 10px;
 }
 
-.logo {
-  width: 200px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* ========== CENTERED CONTENT ========== */
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  min-height: 70vh;
 }
 
 /* ========== CARD SECTION ========== */
 .card {
-  background-color: #1a1a1a;
-  border-radius: 12px;
+  background-color: rgba(24, 24, 36, 0.85);
   padding: 2rem;
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease-in-out;
 }
 
-.card-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-}
-
+/* TITLE + SUBTITLE */
 .title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #e0e0f5;
 }
 
 .title span {
-  color: #e00;
+  display: block;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #bb86fc;
 }
 
+/* PARAGRAPH */
 .description {
   font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 1rem;
+  color: #b0b0c0;
+  margin: 1rem 0;
 }
 
+/* QUOTE / NOTE */
+.note {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #aaaaff;
+  text-shadow: 0 0 4px #bb86fc;
+  margin-bottom: 1.5rem;
+}
+
+/* ICON */
 .card i {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 1.6rem;
+  color: #bb86fc;
   transition: transform 0.3s ease;
 }
 
 .card i:hover {
   transform: scale(1.2);
-  color: #c1121f;
 }
 
-/* ========== FOOTER / META ========== */
+/* ========== FOOTER / METADATA ========== */
 .others {
   margin-top: 2rem;
   font-size: 0.9rem;
   color: #aaa;
-  text-align: center;
 }
 
-.email p:last-child {
-  word-break: break-word;
+.email p {
+  margin: 0.2rem 0;
 }
 
 .email a {
-  color: #fff;
+  color: #7aa7ff;
   text-decoration: underline;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .btn {
     padding: 8px 10px;
@@ -132,27 +147,20 @@ body {
   }
 
   .card {
+    padding: 1.5rem;
     max-width: 90%;
-    padding: 16px;
-  }
-
-  .mascot,
-  .logo {
-    max-width: 220px;
-  }
-
-  .bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
   }
 
   .title {
     font-size: 2rem;
   }
+
+  .mascot {
+    max-width: 100%;
+  }
 }
 
-/* ========== GENERAL TRANSITIONS ========== */
+/* ========== TRANSITIONS ========== */
 a,
 .btn,
 .card,
